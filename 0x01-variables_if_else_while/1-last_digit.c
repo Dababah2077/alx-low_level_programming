@@ -1,9 +1,9 @@
-#include <stdlib.h>
+#include <stdlib.h>stdlib
 #include <time.h>
 #include <stdio.h>
 /**
  * main - Entry point
- * Return: Always 0 (Success)
+ * Return: Always 0 (Succes)
  */
 int main(void)
 {
@@ -12,7 +12,7 @@ int main(void)
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	ld = n % 10;
+	ld = n % 10
 	if (ld > 5)
 	{
 		printf("the last digit of %d is %d and is greater than 5\n", n, ld);
