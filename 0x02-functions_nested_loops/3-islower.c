@@ -1,6 +1,7 @@
 #include "main.h"
 /**
- * islower - Entry point
+ * _islower - Entry point
+ * @c: checks inputs of function
  * Return: 1 if 'c' is lowercase
  * otherwise Always 0 (Success)
  */
