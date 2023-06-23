@@ -3,6 +3,7 @@
  * print_diagonal - Entry point
  * print_diagonal: draws a diagonal line on the terminal
  * @n: check input of function
+ * Return: empty
  */
 void print_diagonal(int n)
 {
