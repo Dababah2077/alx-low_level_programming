@@ -7,7 +7,7 @@
  */
 void print_numbers(void)
 {
-	char c = 48;
+	int c = 48;
 
 	while (c >= 48 && c <= 57)
 	{
