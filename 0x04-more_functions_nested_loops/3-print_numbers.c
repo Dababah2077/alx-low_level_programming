@@ -7,9 +7,9 @@
  */
 void print_numbers(void)
 {
-	char c;
+	char c = 48;
 
-	for (c <= '0'; c >= '9'; n++)
+	while (c >= 48 && c <= 57)
 	{
 		_putchar(c);
 	}
