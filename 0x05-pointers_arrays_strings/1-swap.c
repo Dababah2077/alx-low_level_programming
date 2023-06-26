@@ -10,9 +10,9 @@ void swap_int(int *a, int *b)
 {
 	int first, second;
 
-	first = *a
-	second = *b
+	first = *a;
+	second = *b;
 
-	printf("a = %d", second)
-	printf("b = %d", first)
+	printf("a = %d", second);
+	printf("b = %d", first);
 }
