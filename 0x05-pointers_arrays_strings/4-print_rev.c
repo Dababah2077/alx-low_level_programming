@@ -9,6 +9,6 @@ void print_rev(char *s)
 {
 	char str;
 
-	str =//bug strrev(s);
-	printf("%d", str);
+	str = //bug strrev(*s);
+	printf("%c", str);
 }
