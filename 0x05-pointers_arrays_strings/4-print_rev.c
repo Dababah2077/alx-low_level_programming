@@ -7,8 +7,8 @@
  */
 void print_rev(char *s)
 {
-	char str;
+	int str;
 
-	str = //bug strrev(*s);
-	printf("%c", str);
+	str = puts(s);
+	_putchar(str + 0);
 }
