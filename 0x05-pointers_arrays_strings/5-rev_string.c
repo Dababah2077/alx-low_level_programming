@@ -7,5 +7,14 @@
  */
 void rev_string(char *s)
 {
-	char *strrev(char s);
+	int i = 0;
+
+	while (s[i])
+	{
+		i++;
+	}
+	while (i--)
+	{
+		_putchar(s[i]);
+	}
 }
