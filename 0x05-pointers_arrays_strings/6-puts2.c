@@ -9,9 +9,11 @@
  */
 void puts2(char *str)
 {
+	int i = 0;
+
 	while (*str != '\0')
 	{
-		puts(str);
+		_putchar(str[i]);
 		str = str + 2;
 	}
 }
