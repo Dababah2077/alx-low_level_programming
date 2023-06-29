@@ -1,12 +1,11 @@
 #include "main.h"
 #include <string.h>
 /**
- * *_strcat - Entry point
- * *_strcat: appends the src string to the dest string
- * overwriting the terminating null byte (\0) at the end of dest
- * and then adds a terminating null byte
+ * *_strncat - Entry point
+ * *_strncat: concatenates two strings
  * @src: source file
  * @dest: destination file
+ * @n: checks input of file
  * Return: Returns a pointer to the resulting string dest
  */
 char *_strncat(char *dest, char *src, int n)
@@ -16,11 +15,11 @@ char *_strncat(char *dest, char *src, int n)
 	x = 0;
 
 	while (dest[x])
-        {
+	{
 		x++;
-        }
+	}
 	for (x2 = 0; src[x2] && x2 < n; x2++)
-        {
+	{
 		dest[x++] = src[x2];
 	}
 
