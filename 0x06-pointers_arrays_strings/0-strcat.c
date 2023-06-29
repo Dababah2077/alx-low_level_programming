@@ -7,19 +7,22 @@
  * and then adds a terminating null byte
  * @src: source file
  * @dest: destination file
- * Return: Always 0 (Success)
+ * Return: Returns a pointer to the resulting string dest
  */
 char *_strcat(char *dest, char *src)
 {
-	char str1, str2;
+	int str1, str2;
 
-	src = *str1;
-	dest = *str2;
+	str1 = 0;
 
-	_strcat(char *dest, char *src);
+	while (dest[str1])
+	{
+		str1++;
+	}
+	for (str2 = 0; src[str2]; str2++)
+	{
+		dest[str1++] = src[str2++];
+	}
 
-	puts(src);
-	puts(dest);
-
-	return (0);
+	return (dest);
 }
