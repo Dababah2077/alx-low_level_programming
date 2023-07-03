@@ -5,28 +5,25 @@
  * *_strstr: locates a substring
  * @haystack: first pointer
  * @needle: second pointer
- * Return: a pointer to the beginning of the located substring
- * or NULL if the substring is not found
+ * Return: Always 0 (Success)
  */
 char *_strstr(char *haystack, char *needle)
 {
-	int x, y;
-	char *p;
-
-	x = 0;
-	while (haystack[x] != 0)
+	for (; *haystack != '\0'; haystack++)
 	{
-		y = 0;
-		while (needle[y] != 0)
+		char *one = haystack;
+		char *two = needle;
+
+		while (*one == *two && *two != '\0')
 		{
-			if (haystack[x] == needle[y])
-			{
-				p = &haystack[x];
-				return (p);
-				y++;
-			}
-		x++;
+			one++;
+			two++;
+		}
+		if (*two == '\0')
+		{
+			return (haystack);
 		}
 	}
-	return (0);
+	return (NULL);
+
 }
