@@ -20,7 +20,8 @@ int _strlen(char *s)
  * str_concat: concatenates two strings
  * @s1: first string
  * @s2: second string
- * Return: a pointer to a newly allocated space in memory which contains the contents of s1
+ * Return: a pointer to a newly allocated space in memory
+ * which contains the contents of s1
  * followed by the contents of s2, and null terminated
  * NULL on failure
  */
@@ -29,14 +30,18 @@ char *str_concat(char *s1, char *s2)
 	int size1, size2, i;
 	char *m;
 
-	if (s1 == NULL || s2 == NULL)
+	if (s1 == NULL)
+	{
+		return (NULL);
+	}
+	if (s2 == NULL)
 	{
 		return (NULL);
 	}
 
 	size1 = _strlen(s1);
 	size2 = _strlen(s2);
-	m = malloc((size1 + size2) *sizeof(char) + 1);
+	m = malloc((size1 + size2) * sizeof(char) + 1);
 	if (m == 0)
 	{
 		return (0);
