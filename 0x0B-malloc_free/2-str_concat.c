@@ -2,14 +2,13 @@
 #include <stdlib.h>
 /**
  * _strlen - Entry point
- * _strlen: find length of string
+ * _strlen: find the length of a string
  * @s: string
  * Return: int
  */
 int _strlen(char *s)
 {
 	int size = 0;
-
 	for (; s[size] != '\0'; size++)
 	;
 	return (size);
@@ -20,10 +19,7 @@ int _strlen(char *s)
  * str_concat: concatenates two strings
  * @s1: first string
  * @s2: second string
- * Return: a pointer to a newly allocated space in memory
- * which contains the contents of s1
- * followed by the contents of s2, and null terminated
- * NULL on failure
+ * Return: pointer
  */
 char *str_concat(char *s1, char *s2)
 {
@@ -31,9 +27,9 @@ char *str_concat(char *s1, char *s2)
 	char *m;
 
 	if (s1 == NULL)
-		s2 = "\0";
+		s1 = "";
 	if (s2 == NULL)
-		s1 = "\0";
+		s2 = "";
 
 	size1 = _strlen(s1);
 	size2 = _strlen(s2);
