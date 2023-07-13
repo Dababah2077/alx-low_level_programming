@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stddef.h>
+#include <stdlib.h>
 /**
  * _memset - Entry point
  * _memset: fills arrays with constant byte
@@ -15,8 +17,7 @@ char *_memset(char *s, char b, unsigned int n)
 		*s++ = b;
 	return (ptr);
 }
-#include "main.h"
-#include <stdlib.h>
+
 /**
  * _calloc - Entry point
  * _calloc: allocates memory for an array
