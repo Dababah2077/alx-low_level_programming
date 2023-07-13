@@ -2,7 +2,7 @@
 /**
  * _memset - Entry point
  * _memset: fills arrays with constant byte
- * @S: input
+ * @s: input
  * @b: constant
  * @n: input
  * Return: s
@@ -34,7 +34,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 
 	if (m == 0)
 		return (NULL);
-	
+
 	_memset(m, 0, sizeof(int) * nmemb);
 	return (m);
 }
